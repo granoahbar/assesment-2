@@ -161,10 +161,9 @@ const foodArr = [
 
 //CODE HERE
 
-const filteredFood = foodArr.filter(foodArr.tags){
-    return 
-}
+const filteredFood = foodArr.filter((food) => food.tags.includes('small'))
 
+console.log(filteredFood)
 
 
 
@@ -208,6 +207,17 @@ const filteredFood = foodArr.filter(foodArr.tags){
 */
 
 //CODE HERE
+
+const filterByProperty = (property, number, type) => {
+    const filteredFood = foodArr.filter((food) => {
+        if(type === 'above'){
+            return food[property] >= number
+        }else{
+            return food[property] <= number
+        }
+    })
+    return filteredFood
+}
 
 
 /*
