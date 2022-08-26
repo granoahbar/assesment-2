@@ -228,3 +228,5 @@ const filterByProperty = (property, number, type) => {
 */
 
 //CODE HERE
+
+console.log(filterByProperty('popularity', 3, 'below'))
