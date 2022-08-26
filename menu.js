@@ -32,6 +32,15 @@
 
 //CODE HERE
 
+const pizza = {
+    name: 'pep',
+    price: 10.99,
+    category: 'entree',
+    popularity: 5,
+    ratings: 4, 
+    tags: ['cheesey', 'no olives', 'gluten free', 'dairy free', 'big', 'small']
+}
+
 
 
 //////////////////PROBLEM 2////////////////////
@@ -44,6 +53,7 @@
 
 //CODE HERE
 
+console.log(pizza.popularity)
 
 /*
     Second, log the second tag in your pizza's
@@ -54,6 +64,7 @@
 
 //CODE HERE
 
+console.log(pizza.tags[1])
 
 /*
     Third, destructure the price off of the
@@ -64,6 +75,8 @@
 
 //CODE HERE
 
+let {price} = pizza
+console.log(price)
 
 /*
     Fourth, and last, destructure the category
@@ -74,6 +87,8 @@
 
 //CODE HERE
 
+let {category} = pizza
+console.log(category)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -89,7 +104,48 @@
 
 //CODE HERE
 
-
+const foodArr = [
+    {
+        name: 'alfedo',
+        price: 12.99,
+        category: 'entree',
+        popularity: 4,
+        ratings: 3, 
+        tags: ['cheesey', 'no olives', 'dairy free', 'big']
+    },
+    {
+        name: 'garlic bread',
+        price: 10.99,
+        category: 'side',
+        popularity: 5,
+        ratings: 4, 
+        tags: ['cheesey', 'no olives', 'dairy free', 'small'] 
+    },
+    {
+        name: 'cheese curds',
+        price: 7.99,
+        category: 'appetizer',
+        popularity: 5,
+        ratings: 5, 
+        tags: ['cheesey', 'no olives', 'small', 'savory', "high fat content"]
+    },
+    {
+    name: 'meat ball sub',
+        price: 10.99,
+        category: 'entree',
+        popularity: 5,
+        ratings: 4, 
+        tags: ['cheesey', 'no olives', 'big', 'high calorie', 'high sodium']
+    },
+    {
+        name: 'salad',
+        price: 10.99,
+        category: 'side',
+        popularity: 4,
+        ratings: 4, 
+        tags: ['cheesey', 'gluten free', 'dairy free', 'small', 'low calorie']
+    }
+]
 
 //////////////////PROBLEM 4////////////////////
 /* 
@@ -105,7 +161,10 @@
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter(foodArr.tags){
+    return 
+}
+
 
 
 
