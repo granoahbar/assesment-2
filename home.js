@@ -158,3 +158,23 @@ console.log(deals[0].title)
 deals[1].desc = deals[1].desc.trim().replace('March', 'April')
 
 console.log(deals[1].desc)
+
+
+
+
+const hasMoreVowels = (word) =>
+{
+    const count = (word.match(/[aeiou]/gi).length) 
+
+    if (count > word.length/2)
+    {
+        return true
+    }
+    else
+    {
+        return false
+    }
+}
+
+
+console.log(hasMoreVowels('coolbeaaaaaaaaans'))

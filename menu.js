@@ -75,8 +75,20 @@ console.log(pizza.tags[1])
 
 //CODE HERE
 
-let {price} = pizza
+const pizza = {
+    name: 'pep',
+    price: 10.99,
+    category: 'entree',
+    popularity: 5,
+    ratings: 4, 
+    tags: ['cheesey', 'no olives', 'gluten free', 'dairy free', 'big', 'small']
+}
+
+const { price, name } = pizza
+
+
 console.log(price)
+
 
 /*
     Fourth, and last, destructure the category
@@ -147,6 +159,7 @@ const foodArr = [
     }
 ]
 
+
 //////////////////PROBLEM 4////////////////////
 /* 
     Let's filter the food objects according
@@ -161,7 +174,42 @@ const foodArr = [
 
 //CODE HERE
 
-const filteredFood = foodArr.filter((food) => food.tags.includes('small'))
+// Array Prototype
+
+
+const filter = (cb) => {
+
+    for (let index = 0; index < array.length; index++) {
+        const element = array[index];
+
+        cb(element, index)
+    
+    }
+
+
+}
+
+
+const filteredFood = foodArr.filter(
+    (food) => {
+        return food.tags.includes('small')
+    }
+)
+
+// truthy:
+// > 0
+// "jdkalksjdf;"
+// true
+// []
+// {}
+
+// falsy:
+// undefined
+// null
+// 0
+// NaN
+// false
+
 
 console.log(filteredFood)
 
@@ -229,4 +277,4 @@ const filterByProperty = (property, number, type) => {
 
 //CODE HERE
 
-console.log(filterByProperty('popularity', 3, 'below'))
+console.log(filterByProperty('popularity', 3, 'below'))clearInterval
